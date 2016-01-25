@@ -1,0 +1,12 @@
+.input-container {
+    background-color: green;
+    height: 80vh;
+}
+.output-container {
+    background-color: blue;
+    height: 80vh;
+}
+.result-container {
+    background-color: red;
+    height: 20vh;
+}
