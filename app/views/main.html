@@ -1,10 +1,13 @@
 <div layout="row">
     <div flex class="input-container">
+        <input-processor inputs='inputs' errors='errors'></input-processor>
     </div>
     <div flex class="output-container">
+        <output-processor outputs='output'></output-processor>
     </div>
 </div>
 <div layout="column">
-    <div flex class="result-container"></div>
-    
+    <div flex class="result-container">
+        <result-processor errors='errors'></result-processor>
+    </div>
 </div>
