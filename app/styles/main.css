@@ -1,14 +1,22 @@
-.input-container {
+.overflow-y {
     position: relative;
-    background-color: green;
-    height: 80vh;
     overflow-y: auto;
 }
+.input-container {
+    border: solid #ccc 1px;
+    border-radius: 2px;
+    margin: 2px;
+    height: 78vh;
+}
 .output-container {
-    background-color: blue;
-    height: 80vh;
+    border: solid #ccc 1px;
+    border-radius: 2px;
+    margin: 2px;
+    height: 78vh;
 }
 .result-container {
-    background-color: red;
+    border: solid #ccc 1px;
+    border-radius: 2px;
+    margin: 2px;
     height: 20vh;
 }
