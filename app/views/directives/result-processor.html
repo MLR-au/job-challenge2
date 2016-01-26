@@ -1,0 +1,12 @@
+<md-content>
+    <md-list>
+        <md-list-item ng-repeat="error in errors">
+            <div layout="column">
+                {{error.input}}
+                <div ng-repeat="e in error.errors">
+                    > <em>{{e}}</em>
+                </div>
+            </div>
+        </md-list-item>
+    </md-list>
+</md-content>
