@@ -1,6 +1,8 @@
 .input-container {
+    position: relative;
     background-color: green;
     height: 80vh;
+    overflow-y: auto;
 }
 .output-container {
     background-color: blue;
