@@ -40,6 +40,7 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "grunt-build-control": "^0.6.2",
     "karma-ng-html2js-preprocessor": "^0.2.0"
   }
 }
