@@ -7,7 +7,7 @@
  * # inputProcessor
  */
 angular.module('appApp')
-  .directive('inputProcessor', [ 'inputValidator', function (iv) {
+  .directive('inputProcessor', [ 'inputValidator', '_', function (iv, _) {
     return {
       templateUrl: 'views/directives/input-processor.html',
       restrict: 'E',
@@ -17,9 +17,13 @@ angular.module('appApp')
       },
       link: function postLink(scope, element, attrs) {
           scope.validateInputs = function() {
-              var result = iv.validate(scope.rawInput);
-              scope.inputs = result.inputs; 
-              scope.errors = result.errors;
+              _.debounce(function() {
+                  scope.$apply(function() {
+                      var result = iv.validate(scope.rawInput);
+                      scope.inputs = result.inputs; 
+                      scope.errors = result.errors;
+                  });
+              }, 1000)();
           };
 
       }

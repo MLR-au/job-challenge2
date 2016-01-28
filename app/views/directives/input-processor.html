@@ -1,8 +1,11 @@
 <md-content layout-padding>
     <md-input-container class="md-block">
         <label>Employee Pay Information</label>
-        <textarea rows="100" ng-model="rawInput" ng-blur="validateInputs()" autofocus 
-            aria-label="Employee Pay Information">
+        <textarea rows="100" 
+                  ng-model="rawInput" 
+                  ng-change="validateInputs()"
+                  aria-label="Employee Pay Information">
+                  autofocus
         </textarea>
     </md-input-container>
 </md-content>
