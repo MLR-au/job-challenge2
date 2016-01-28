@@ -34,8 +34,8 @@ angular.module('appApp')
                 valid.push({
                     'fullName': fields[0] + ' ' + fields[1],
                     'payPeriod': fields[4],
-                    'salary': fields[2],
-                    'superRate': fields[3]
+                    'salary': parseInt(fields[2]),
+                    'superRate': parseInt(_.trim(fields[3], '%'))
                 });
             }
         });
