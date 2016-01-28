@@ -1,13 +1,16 @@
 <div layout="row">
     <div flex class="input-container overflow-y">
+        <p class='md-padding'>Enter in the employee pay information (one per line) in CSV format.</p>
         <input-processor inputs='inputs' errors='errors'></input-processor>
     </div>
     <div flex class="output-container overflow-y">
+        <p class='md-padding'>Results will be displayed here after about 1 second...</p>
         <output-processor inputs='inputs'></output-processor>
     </div>
 </div>
 <div layout="column">
     <div flex class="result-container overflow-y">
+        <p class='md-padding'>And look for validation errors down here!</p>
         <result-processor errors='errors'></result-processor>
     </div>
 </div>
