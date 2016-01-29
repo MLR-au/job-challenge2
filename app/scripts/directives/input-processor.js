@@ -17,6 +17,9 @@ angular.module('appApp')
       },
       link: function postLink(scope, element, attrs) {
           scope.validateInputs = function() {
+              // this method is called by ng-change so we use debounce
+              //  to run it only after a second has passed since 
+              //  the last change
               _.debounce(function() {
                   scope.$apply(function() {
                       var result = iv.validate(scope.rawInput);
