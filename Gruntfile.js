@@ -41,7 +41,7 @@ module.exports = function (grunt) {
         },
         pages: {
           options: {
-            remote: 'git@gitlab.com:marcolarosa/truepillars-challenge.git',
+            remote: 'git@github.com:MLR-au/job-challenge2.git',
             branch: 'gh-pages'
           }
         },
