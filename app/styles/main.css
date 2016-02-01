@@ -22,9 +22,9 @@
 }
 
 .hint {
-    position: absolute;
+    position: relative;
     left: 2px;
-    top: 40px;
+    top: 25px;
     font-size: 12px;
     line-height: 14px;
     color: grey;
